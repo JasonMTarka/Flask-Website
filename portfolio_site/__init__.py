@@ -1,5 +1,4 @@
 from flask import Flask
-from flask_mail import Mail
 from portfolio_site.config import Config
 
 def create_app(config_class=Config):
