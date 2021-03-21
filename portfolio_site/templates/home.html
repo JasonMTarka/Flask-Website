@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1 class="border-bottom">About Me</h1>
+<img class="rounded-circle account-img" src="{{ image_file }}">
+<div class="row mb-4">
+Welcome!  My name is Jason Tarka, an independent software developer and former English teacher living in Tokyo, Japan.  Our modern world is full of technology which enriches our lives; IoT technology which makes the home more convenient than ever, wide-spread high-speed internet access, and video calls to keep us connected to our friends or family no matter the situation, to name a few.
+</div>
+<div class="row mb-4">
+In early 2020, I realized that in order to understand the modern world as it continues to evolve, I needed to learn more about the technology that is driving this unprecedented growth.  Despite working 12-hour days as an English teacher in Tokyo, I began learning Python, first through online courses and then through my own projects.  After having developed my own website and applications, in addition to learning MySQL and a wide range of Python modules and frameworks, I've gained a real appreciation for all that goes into creating complex programs and engaging websites.  
+</div>
+<div class="row mb-4">
+Despite all that I have learned so far, there is still so much more I want to master.  I have featured a few of my most developed projects on this site.  You can see their functionality and links to their source codes by clicking the links on the above navigation bar.
+</div>
+<div class="row mb-4">
+I am actively searching for employment opportunities.  If interested, please contact me by email (jasonmtarka@gmail.com).  You can also find my LinkedIn and Github page on the right side bar.
+</div>
+{% endblock content %}
+
+{% block sidebar %}
+<div class="col-md-4">
+	<div class="content-section">
+	<h3>{{ title }}</h3>
+    	<p class='text-muted'>This site is also one of my projects!  I programmed this site using the Flask framework using Python.  Formatting is done with Bootstrap.  You can see the source code below:
+        <ul class="list-group">
+        <li class="list-group-item list-group-item-light"><a href="https://github.com/JasonMTarka">My Github Page</a></li>
+        <li class="list-group-item list-group-item-light"><a href="#">Site Source Code - Github Link</a></li>
+        <li class="list-group-item list-group-item-light"><a href="https://www.linkedin.com/in/jason-tarka-342b371a6/">My LinkedIn</a></li>
+        <li class="list-group-item list-group-item-light">jasonmtarka@gmail.com</li>
+        </ul>
+        </p>
+    </div>
+</div>
+{% endblock sidebar %}

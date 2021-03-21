@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="content_section">
+        <fieldset class="form-group"> <!-- Bootstrap class to help make look nicer -->
+            <legend class="border-bottom mb-4"> <!-- mb-4 == margin bottom with a value of 4 -->
+                Sudoku Solver
+            </legend>
+        <div class="mb-4">
+        This script automatically solves sudoku puzzles.  Choose one of the sudoku puzzles below to start.
+        </div>
+        <div class="class=content_section mb-4">
+        <li class="list-group-item list-group-item-light"><a href="{{url_for('sudoku.sudoku_solver', difficulty='Easy #1')}}">Sudoku Easy #1</a></li>
+        <li class="list-group-item list-group-item-light"><a href="{{url_for('sudoku.sudoku_solver', difficulty='Easy #2')}}">Sudoku Easy #2</a></li>
+        <li class="list-group-item list-group-item-light"><a href="{{url_for('sudoku.sudoku_solver', difficulty='Easy #3')}}">Sudoku Easy #3</a></li>
+        <li class="list-group-item list-group-item-light"><a href="{{url_for('sudoku.sudoku_solver', difficulty='Medium #1')}}">Sudoku Medium #1</a></li>
+        <li class="list-group-item list-group-item-light"><a href="{{url_for('sudoku.sudoku_solver', difficulty='Medium #2')}}">Sudoku Medium #2</a></li>
+        <li class="list-group-item list-group-item-light"><a href="{{url_for('sudoku.sudoku_solver', difficulty='Hard #1')}}">Sudoku Hard #1</a></li>
+    	</div>
+        <div class="mb-4">
+        I am currently working to implement a more robust sudoku interface which allows users to input their own guesses.
+        </div>
+        </fieldset>
+    </div>
+{% endblock content %}
+
+{% block sidebar %}
+<div class="col-md-4">
+	<div class="content-section">
+	<h3>{{ title }}</h3>
+    	<p class='text-muted'>A sudoku solver which uses recursion and backtracking to find the solution.
+        <ul class="list-group">
+        <li class="list-group-item list-group-item-light"><a href="https://github.com/JasonMTarka/Sudoku-Solver/blob/main/sudoku_solver.py">Web version - Github Link</a></li>
+        <li class="list-group-item list-group-item-light"><a href="https://github.com/JasonMTarka/Sudoku-Solver/blob/main/sudoku_solver.py">Tkinter GUI version - Github Link</a></li>
+        <li class="list-group-item list-group-item-light"><a href="https://www.linkedin.com/in/jason-tarka-342b371a6/">My LinkedIn</a></li>
+        <li class="list-group-item list-group-item-light">jasonmtarka@gmail.com</li>
+        </ul>
+        </p>
+    </div>
+</div>
+{% endblock sidebar %}
