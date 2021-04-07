@@ -3,5 +3,5 @@ from wtforms import SubmitField, BooleanField, IntegerField, StringField, valida
 from wtforms.validators import DataRequired
 
 class Covid19Form(FlaskForm):
-	
-	generate = SubmitField("Scrape Data") 
+
+    generate = SubmitField("Scrape Data")
