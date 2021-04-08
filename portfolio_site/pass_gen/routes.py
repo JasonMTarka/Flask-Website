@@ -1,6 +1,5 @@
-import pyperclip
-from flask import Blueprint, render_template, request, url_for, redirect
-from portfolio_site.pass_gen.password_generator import Password
+from flask import Blueprint, render_template
+from portfolio_site.pass_gen.Password_Generator.password_generator import Password
 from portfolio_site.pass_gen.forms import PassGenForm
 
 pass_gen = Blueprint("pass_gen", __name__)

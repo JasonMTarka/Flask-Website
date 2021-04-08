@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template
-from portfolio_site.sudoku.sudoku_solver import Sudoku
+from portfolio_site.sudoku.Sudoku_Solver.sudoku_solver import Sudoku
 from portfolio_site.sudoku.forms import SudokuForm
 
 
