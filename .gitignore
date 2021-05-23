@@ -1,2 +1,3 @@
 site_env/
 /portfolio_site/__pycache__/
+*.pyc
