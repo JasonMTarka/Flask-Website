@@ -6,7 +6,7 @@ covid = Blueprint("covid", __name__)
 
 
 @covid.route("/coronavirus_tracker", methods=["GET", "POST"])
-def coronavirus_tracker():
+def coronavirus_tracker() -> str:
 
     form = Covid19Form()
     graph_img = url_for("static", filename="graphs/" + "Figure_1.png")

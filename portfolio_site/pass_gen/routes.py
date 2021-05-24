@@ -6,7 +6,7 @@ pass_gen = Blueprint("pass_gen", __name__)
 
 
 @pass_gen.route("/password_generator", methods=["GET", "POST"])
-def password_generator():
+def password_generator() -> str:
     form = PassGenForm()
     password = Password()
 

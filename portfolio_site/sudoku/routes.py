@@ -7,12 +7,12 @@ sudoku = Blueprint("sudoku", __name__)
 
 
 @sudoku.route("/sudoku_lander", methods=["GET", "POST"])
-def sudoku_lander(token=None):
+def sudoku_lander() -> str:
     return render_template("sudoku_lander.html", title="Sudoku Solver")
 
 
 @sudoku.route("/sudoku_solver/<difficulty>", methods=["GET", "POST"])
-def sudoku_solver(difficulty):
+def sudoku_solver(difficulty: str) -> str:
 
     form = SudokuForm()
     sudoku = Sudoku(difficulty=difficulty)
