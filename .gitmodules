@@ -1,0 +1,12 @@
+[submodule "portfolio_site/coronavirus/Coronavirus_Tracker"] 
+  path = portfolio_site/coronavirus/Coronavirus_Tracker 
+  url = https://github.com/JasonMTarka/Flask-Website.git
+
+[submodule "portfolio_site/pass_gen/Password_Generator"] 
+  path = portfolio_site/pass_gen/Password_Generator 
+  url = https://github.com/JasonMTarka/Flask-Website.git
+
+[submodule "portfolio_site/sudoku/Sudoku_Solver"] 
+  path = portfolio_site/sudoku/Sudoku_Solver 
+  url = https://github.com/JasonMTarka/Flask-Website.git
+  
